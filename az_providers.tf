@@ -1,7 +1,15 @@
 # Provider block for Azure IMS Terraform Remote State (POC) 
 
-provider "azurerm" {
-  features {
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "2.89.0"
+    }
   }
 }
+
+provider "azurerm" {
+  # Configuration options
+} 
 
