@@ -12,7 +12,6 @@ terraform {
 provider "azurerm" {
   # Configuration options
   features{
-    az login -u $username -p $password
   }
 } 
 
